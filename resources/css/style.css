@@ -1,18 +1,30 @@
-div {
-  border: 1px solid black;
+html {
+  font-family: Arial;
 }
 header {
   position: fixed;
-  background-color: white;
+  background-color: #dbdbdb;
   width: 100%;
   display: inline-flex;
   height: 64px;
   justify-content: space-between;
-  margin-top: -64px;
+  margin-top: -8px;
 }
 .logo {
-  padding-right: 24px;
+  padding-left: 24px;
   display: inline-flex;
+  align-content: center;
+  padding-top: 1.5rem;
+}
+.logo img {
+  display: flex;
+  align-content: center;
+}
+.logo h2 {
+  padding-top: .5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
   align-content: center;
 }
 .nav {
@@ -20,20 +32,233 @@ header {
   align-content: center;
   padding-right: 24px;
   padding-top: 25px;
+  font-size: 1.5rem;
 }
 .banner {
-  background-color: grey;
+  background-color: #bfc1c1;
   width: 100%;
-  display: block;
+  display: inline-flex;
   flex-direction: row;
-  margin-top: 64px;
+  padding: 32px 0 32px 24px;
+  margin-top: 55px;
 }
-.banner img {
+.first {
   width: 60%;
-  padding: 32px 24px;
+  display: inline-flex;
+}
+.first img {
+  padding-right: 24px;
 }
 .text {
-  display: inline-block;
-  width: 30%;
+  display: block;
+  width: 40%;
+  padding-top: 250px;
+}
+.text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+.text h3 {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+.button {
+  padding-left: 125px;
+  background-color: #6f7070;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1.5rem;
+  width: 35%;
+  color: white;
+}
+.second {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #dbdbdb;
+  padding: 32px 0 32px 24px;
+  margin-bottom: -22px;
+}
+.first-column {
+  width: 60%;
+}
+.first-column img {
+  padding-right: 24px;
+}
+.second h2 {
+  font-size: 3rem;
+}
+.first-column h2 {
+  padding-top: 32px;
+  padding-bottom: 24px;
+  font-weight: bold;
+}
+.first-column h6 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.second-column {
+  display: block;
+  width: 40%;
+}
+.second p {
+  font-size: 1.5rem;
+}
+.second h6 {
+  font-size: 1rem;
+}
+.second-column img {
+  width: 35%;
+  height: auto;
+  display: inline-flex;
+  padding: 16px;
+}
+.info {
+  display: inline-flex;
   flex-direction: column;
+  width: 65%;
+  align-content: center;
+}
+.orientation,
+.campus,
+.guest {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+}
+.guest {
+  background-color: #bfc1c1;
+}
+.info h3 {
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.info p {
+  font-size: 1.25rem;
+}
+.info h6 {
+  margin-top: 8px;
+}
+.third {
+  background-color: #bfc1c1;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.classes {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 32px auto;
+  justify-content: center;
+}
+.software,
+.art,
+.data,
+.business {
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+.class {
+  align-content: center;
+  background-color: white;
+  padding-left: 16px;
+  padding-bottom: 32px;
+}
+.class h3 {
+  font-size: 1.75rem;
+  padding-top: 16px;
+  font-weight: bold;
+}
+.class h4 {
+  padding: 8px;
+  font-size: 1.25rem;
+  font-style: normal;
+}
+.class p {
+  font-size: 1.25rem;
+}
+.third h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-top: 32px;
+  margin-bottom: 32px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.box {
+  width: 30%;
+}
+.box img {
+  height: auto;
+  width: 100%;
+}
+.left {
+  width: 60%;
+}
+video {
+  width: 100%;
+  height: auto;
+  padding-bottom: 24px;
+  padding-right: 24px;
+}
+.others {
+  display: block;
+  width: 40%;
+}
+.others img {
+  width: 35%;
+  height: auto;
+  display: inline-flex;
+  padding: 16px;
+}
+.fourth {
+  width: 100%;
+  background-color: #dbdbdb;
+  padding: 32px 0 32px 24px;
+}
+.bot {
+  display: inline-flex;
+  flex-direction: row;
+}
+.fisma,
+.NY {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+}
+.fourth h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.video h3 {
+  font-weight: bold;
+  font-size: 1.75rem;
+  padding-bottom: 8px;
+}
+.video p {
+  font-size: 1.25rem;
+}
+.NY p,
+.fisma p {
+  padding-top: 8px;
+}
+.footer {
+  background-color: #dbdbdb;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.footer p {
+  display: inline-flex;
+}
+.footer nav {
+  display: inline;
 }
