@@ -10,6 +10,52 @@ header {
   justify-content: space-between;
   margin-top: -8px;
 }
+.mobile {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  html {
+    width: 480px;
+  }
+  .header {
+    display: none;
+  }
+  .mobile {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  .span {
+    display: none;
+  }
+  .logo h2 {
+    display: none;
+  }
+  .first img {
+    width: 100%;
+  }
+  .first {
+    display: block;
+    flex-direction: column;
+  }
+  .text {
+    justify-content: flex-start;
+  }
+  .text h1 {
+    font-size: 1rem;
+  }
+  .third img,
+  .third h4,
+  .third p {
+    display: none;
+  }
+  .classes {
+    display: block;
+    flex-direction: column;
+  }
+  .class {
+    width: 480px;
+  }
+}
 .logo {
   padding-left: 24px;
   display: inline-flex;
