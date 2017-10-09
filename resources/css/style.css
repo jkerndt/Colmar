@@ -326,3 +326,13 @@ nav .mobile {
     width: 100%;
     margin: 0 auto;
 }
+footer {
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 0.75rem;
+}
+footer .links p {
+    padding: 0 0.5rem;
+}
