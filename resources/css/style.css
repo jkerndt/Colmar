@@ -77,3 +77,43 @@ nav span {
 nav .mobile {
     display: none;
 }
+.first {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-height: auto;
+    background-color: #61a4e2;
+    top: 64px;
+}
+.first-img {
+    display: block;
+    position: relative;
+    max-width: 55%;
+    overflow: hidden;
+    padding: 2rem 2.5rem 2rem 1.5rem;
+}
+.first img {
+    width: 100%;
+    height: auto;
+}
+.first-content {
+    width: 30%;
+    height: auto;
+    margin: auto 0;
+    line-height: 1.1;
+}
+.first-content .button {
+    positon: relative;
+    display: block;
+    background-color: #d9ebf4;
+    color: #000000;
+    max-width: 300px;
+    font-size: 1.6rem;
+    font-family: arial;
+    font-weight: 300;
+    padding: 0.75rem;
+    margin: 2.5rem 0;
+    text-align: center;
+}
