@@ -13,48 +13,53 @@ header {
 .mobile {
   display: none;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 780px) {
   html {
-    width: 480px;
+    width: 100%;
   }
   .header {
+    width: 100%;
+  }
+  .desktop {
     display: none;
+  }
+  .first {
+    padding: 0;
+    flex-wrap: wrap;
   }
   .mobile {
-    display: inline-flex;
-    flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
-  .span {
+  .logo, nav {
     display: none;
   }
-  .logo h2 {
-    display: none;
+  .banner {
+    width: 100%;
+    display: inline-block;
+    flex-direction: column;
   }
   .first img {
     width: 100%;
   }
+  .banner .first {
+    width: 100%;
+  }
   .first {
+    width: 100%;
+    flex-wrap: wrap;
     display: block;
     flex-direction: column;
   }
   .text {
-    justify-content: flex-start;
-  }
-  .text h1 {
+    padding: 0px;
     font-size: 1rem;
-  }
-  .third img,
-  .third h4,
-  .third p {
-    display: none;
-  }
-  .classes {
     display: block;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
-  .class {
-    width: 480px;
-  }
+
 }
 .logo {
   padding-left: 24px;
@@ -74,7 +79,7 @@ header {
   align-content: center;
 }
 .nav {
-  display: inline;
+  display: inline-flex;
   align-content: center;
   padding-right: 24px;
   padding-top: 25px;
@@ -88,12 +93,43 @@ header {
   padding: 32px 0 32px 24px;
   margin-top: 55px;
 }
+
+@media only screen and (max-width: 780px) {
+  .first-column {
+    display: none;
+  }
+  .second {
+    width: 100%;
+  }
+  .second-column img {
+    width: 100%;
+    padding: 16px;
+  }
+  .second-column {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+  }
+  .orientation,
+  .campus,
+  .guest {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .orientation img {
+    width: -webkit-fill-available;
+  }
+}
 .first {
   width: 60%;
   display: inline-flex;
 }
 .first img {
   padding-right: 24px;
+  width: 100%;
+  height: auto;
 }
 .text {
   display: block;
@@ -187,6 +223,28 @@ header {
 .info h6 {
   margin-top: 8px;
 }
+
+@media only screen and (max-width: 780px) {
+  .third .desktop {
+    display: none;
+  }
+  .third-mobile {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .third-mobile span {
+    background-color: #005daa;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fisma,
+  .NY {
+    display: none;
+  }
+}
+
 .third {
   background-color: #bfc1c1;
     width: 100%;
@@ -260,6 +318,9 @@ video {
   height: auto;
   display: inline-flex;
   padding: 16px;
+}
+.third .mobile {
+  display: none;
 }
 .fourth {
   width: 100%;

@@ -5,28 +5,33 @@
   <link href="resources\css\style.css" type="text/css" rel="stylesheet">
   <title>Colmar Academy</title>
 </head>
-<header>
-  <div class="logo">
-    <img src="resources\images\ic-logo.svg"/>
-    <h2>COLMARACADEMY</h2>
-  </div>
-  <div class="nav">
-    <nav>
-      <span>On campus</span>
-      <span>Online</span>
-      <span>Our companies</span>
-      <span>Sign In</span>
-    </nav>
-  </div>
-  <div class="mobile">
-    <ul>
-      <li><img src="./resources/images/ic-on-campus.svg"/></li>
-      <li><img src="./resources/images/ic-online.svg"/></li>
-      <li><img src="./resources/images/ic-login.svg"/></li>
-    </ul>
-  </div>
-</header>
 <body>
+    <!-- Header -->
+    <div class="header-desktop">
+        <div class="logo">
+            <img src="resources/images/ic-logo.svg" /><span>COLMARACADEMY</span>
+        </div>
+        <nav class="desktop">
+            <span>On Campus</span>
+            <span>Online</span>
+            <span>For Companies</span>
+            <span>Sign in</span>
+        </nav>
+    </div>
+    <div class="header-mobile">
+        <div class="mobile">
+            <a href="#"><img src="resources/images/ic-logo.svg" /></a>
+        </div>
+        <div class="mobile">
+            <a href="#"><img src="resources/images/ic-on-campus.svg"></a>
+        </div>
+        <div class="mobile">
+            <a href="#"><img src="resources/images/ic-online.svg"></a>
+        </div>
+        <div class="mobile">
+            <a href="#"><img src="resources/images/ic-login.svg"></a>
+        </div>
+    </div>
   <!-- Main portion -->
   <div class="banner">
     <div class="first">
@@ -78,7 +83,7 @@
    </div>
  </div>
  <!-- Third Section -->
-<div class="third">
+<div class="third desktop">
   <h1>Start learning</h1>
   <div class="classes">
     <div class="software box">
@@ -132,6 +137,14 @@
     </div>
   </div>
 </div>
+<div class="third-mobile">
+    <span>Software engineering</span>
+    <span>Computer art</span>
+    <span>Design</span>
+    <span>Data</span>
+    <span>Business</span>
+    <span>Marketing</span>
+</div>
 <!-- Fourth Section -->
 <div class="fourth">
   <h1>Thesis exhibit</h1>
@@ -139,7 +152,7 @@
   <div class="left">
     <div class="video">
       <video>
-        <source src="./resources/videos/thesis.mp4" type="video/mp4">
+        <source src="./resources/videos/thesis.mp4" controls type="video/mp4">
         Your browser does not support the video tag.
       </video>
         <h3>Reimagine urban</h3>
@@ -163,8 +176,8 @@
         <p>Research study about New York</p>
       </div>
     </div>
-    </div>
   </div>
+</div>
 </div>
 </body>
 <footer>
